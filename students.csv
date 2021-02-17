@@ -1,4 +1,4 @@
 Students,Repositories,Test
-Ivanov,/home/anovotarskyi/Desktop/test/repos/Ivanov,True
-Petrov,/home/anovotarskyi/Desktop/test/repos/Petrov,True
-Sydorov,/home/anovotarskyi/Desktop/test/repos/Sydorov,True
+Ivanov,./repos/Ivanov,True
+Petrov,./repos/Petrov,True
+Sydorov,./repos/Sydorov,True
