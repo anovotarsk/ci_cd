@@ -2,7 +2,7 @@ import csv
 import os
 
 def check_output( student_out_file, need_out_file ):
-    os.system( "ls -R" )
+    #os.system( "ls -R" )
     student_fd = open( student_out_file, "r" )
     need_fd = open( need_out_file )
     student_out = student_fd.read()
@@ -36,8 +36,9 @@ for i in range( len( students ) ):
 
     os.system( "git clone " + repositories[i] + " " + students[i] )
     os.system( run_program )
-    check = check_output( students[i] + "/out", "need_out" )
+    check = check_output( "out", "need_out" )
     os.system( "rm -rf " + students[i] )
+    os.system( "rm out" )
     if check == True:
         rez.append( "True" )
     else:
