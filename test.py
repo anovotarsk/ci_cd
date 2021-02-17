@@ -2,6 +2,7 @@ import csv
 import os
 
 def check_output( student_out_file, need_out_file ):
+    os.system( "ls -R" )
     student_fd = open( student_out_file, "r" )
     need_fd = open( need_out_file )
     student_out = student_fd.read()
@@ -13,9 +14,6 @@ def check_output( student_out_file, need_out_file ):
     if student_out != need_out:
         return False
     return True
-
-os.system("pwd && ls")
-os.system("ls repos")
 
 file = open( "students.csv", "r" )
 reader = csv.reader( file  )
