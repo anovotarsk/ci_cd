@@ -36,9 +36,8 @@ for i in range( len( students ) ):
 
     os.system( "git clone " + repositories[i] + " " + students[i] )
     os.system( run_program )
-    check = check_output( "out", "need_out" )
+    check = check_output( students[i] + "/out", "need_out" )
     os.system( "rm -rf " + students[i] )
-    os.system( "rm out" )
     if check == True:
         rez.append( "True" )
     else:
