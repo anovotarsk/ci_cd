@@ -14,6 +14,8 @@ def check_output( student_out_file, need_out_file ):
         return False
     return True
 
+os.system("pwd && ls")
+
 file = open( "students.csv", "r" )
 reader = csv.reader( file  )
 
